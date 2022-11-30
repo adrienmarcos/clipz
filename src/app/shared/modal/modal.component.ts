@@ -9,10 +9,9 @@ import { ModalService } from "../../services/modal.service";
 export class ModalComponent {
 
   @Input()
-  modalID = '';
+  modalID: string = '';
 
-  constructor(public modal: ModalService) {
-  }
+  constructor(public modal: ModalService) {}
 
   public closeModal(): void {
     this.modal.toggleModal(this.modalID);
